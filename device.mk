@@ -70,6 +70,17 @@ PRODUCT_MODEL := MSM8994 for arm64
 PRODUCT_CHARACTERISTICS := default
 # endif
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.class_main.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    ueventd.qcom.rc
+
+
 #Android EGL implementation
 #PRODUCT_PACKAGES += libGLES_android
 
